@@ -1,0 +1,20 @@
+{
+    "name": "magedhara/module-productdocs",
+    "description": "N/A",
+    "require": {
+        "php": "~7.1.3||~7.2.0||~7.3.0||~7.4.0"
+    },
+    "type": "magento2-module",
+    "license": [
+        "proprietary",
+        "BSD-3-Clause"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Mage2\\ProductDocs\\": ""
+        }
+    }
+}

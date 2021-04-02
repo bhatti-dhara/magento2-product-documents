@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * BhattiDhara
+ * Copyright (C) 2021 BhattiDhara
+ *
+ * NOTICE OF LICENSE
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program. If not, see http://opensource.org/licenses/gpl-3.0.html
+ *
+ * @category BhattiDhara
+ * @package Mage2_ProductDocs
+ * @copyright Copyright (c) 2021 BhattiDhara
+ * @license http://opensource.org/licenses/gpl-3.0.html GNU General Public License,version 3 (GPL-3.0)
+ * @author BhattiDhara
+ */
+ -->
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="mage2_product_documents" resource="default" engine="innodb" comment="Mage2 Product Documents">
+        <column name="document_id" xsi:type="int" padding="11" unsigned="true" identity="true" nullable="false" comment="Product Document ID"/>
+        <column name="document_label" xsi:type="varchar" length="255" nullable="false" comment="Document Label"/>
+        <column name="file_name" xsi:type="varchar" length="255" nullable="false" comment="Source URL"/>
+        <column name="product_ids" xsi:type="varchar" length="255" nullable="true" comment="Product IDs"/>
+        <column name="store_ids" xsi:type="varchar" length="50" nullable="false" comment="Store IDs"/>
+        <column name="sort_order" xsi:type="int" padding="10" unsigned="true" nullable="false" identity="false" default="0" comment="Sort Order"/>
+        <column name="created_at" xsi:type="timestamp" default="CURRENT_TIMESTAMP" comment="Created At"/>
+
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="document_id"/>
+        </constraint>
+        <index referenceId="MAGE2_PRODUCT_DOCUMENTS_DOCUMENT_LABEL" indexType="fulltext">
+            <column name="document_label"/>
+        </index>
+    </table>
+</schema>

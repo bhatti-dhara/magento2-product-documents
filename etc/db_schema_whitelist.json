@@ -1,0 +1,19 @@
+{
+    "mage2_product_documents": {
+        "column": {
+            "document_id": true,
+            "document_label": true,
+            "file_name": true,
+            "product_ids": true,
+            "store_ids": true,
+            "sort_order": true,
+            "created_at": true
+        },
+        "index": {
+            "MAGE2_PRODUCT_DOCUMENTS_DOCUMENT_LABEL": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}
