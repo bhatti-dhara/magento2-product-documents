@@ -1,9 +1,11 @@
-<h3><b>Mage2 Product Documents</b></h3>
+<h2><b>Mage2 Product Documents</b></h2>
+
+
 <p><b>Mage2 Product Documents</b> extension is very easy to install and reliable to use. It would provide downloadable links of documents on the product page. You can add multiple documents and sync them with one or more products from the admin panel.</p>
 
 <h3><b>Installation Instruction</b></h3>
 <ul>
-<li>Install <b>Mage2_Base</b> module from {here}</li>
+<li>Install <b>Mage2_Base</b> module from <a href="https://github.com/bhatti-dhara/magento2-base.git">https://github.com/bhatti-dhara/magento2-base.git</a></li>
 <li>Copy the content of the repo to <b>app/code/Mage2/ProductDocs</b> directory</li>
 <li>Run command: <b>php bin/magento setup:upgrade</b></li>
 <li>Run command: <b>php bin/magento setup:static-content:deploy</b></li>
