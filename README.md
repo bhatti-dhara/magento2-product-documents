@@ -25,3 +25,16 @@
 <p>In the case of any other queries regarding this extension:</p>
 <p>Contact us at <b>bhattidhara166@gmail.com</b> or Skype: <b>bhattidhara166</b> . We would be really happy to help :)</p>
 
+<h3><b>Screen Shots</b></h3>
+<p><i>Admin Configuration Menu</i></p>
+<img src="https://user-images.githubusercontent.com/17154042/113543955-09e5f380-9605-11eb-9484-6debe40895a3.png" alt="Configuration-Settings-Stores-Magento-Admin-Menu"/>
+<p><i>Admin Configurations</i></p>
+<img src="https://user-images.githubusercontent.com/17154042/113544261-8ed10d00-9605-11eb-9cef-8f1647bbc645.png" alt="Configuration-Settings-Stores-Magento-Admin"/>
+<p><i>Product Documents List</i></p>
+<img src="https://user-images.githubusercontent.com/17154042/113544291-9e505600-9605-11eb-9973-7f629708d546.png" alt="Product-Documents-Mage2-Magento-Admin"/>
+<p><i>New Product Document Form</i></p>
+<img src="https://user-images.githubusercontent.com/17154042/113544302-a3ada080-9605-11eb-9db6-0cb1338708ea.png" alt="New-Document-Product-Documents-Magento-Admin"/>
+<p><i>Edit Product Document Form</i></p>
+<img src="https://user-images.githubusercontent.com/17154042/113544309-a7d9be00-9605-11eb-89a8-c7beb3998016.png" alt="Document-2-Product-Documents-Magento-Admin"/>
+<p><i>Downloadable Document Links on Product Page</i></p>
+<img src="https://user-images.githubusercontent.com/17154042/113544396-cb9d0400-9605-11eb-8821-2f8ed9165561.png" alt="Strive-Shoulder-Pack"/>
