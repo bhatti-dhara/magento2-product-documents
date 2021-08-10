@@ -83,9 +83,15 @@ class Download extends Template
         $storeId = $this->getStoreId();
 
         $collection = $this->documentsCollectionFactory->create();
-        $collection->addFieldToFilter('product_ids', ['regexp' => '[[:<:]]' . $currentProductId . '[[:>:]]'])
-            ->addFieldToFilter('store_ids', ['regexp' => '[[:<:]]' . $storeId . '[[:>:]]'])
-            ->setOrder('sort_order', 'ASC');
+        $collection->addFieldToFilter('product_ids', ['finset' => $currentProductId]);
+        $collection->addFieldToFilter(
+            'store_ids',
+            [
+                ['eq' => 0],
+                ['finset' => $storeId]
+            ]
+        );
+        $collection->setOrder('sort_order', 'ASC');
 
         return $collection;
     }
